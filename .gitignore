@@ -1,0 +1,25 @@
+# Python
+.venv/
+__pycache__/
+*.pyc
+
+# Env
+.env
+
+# DB
+*.db
+*.sqlite3
+
+# Terraform generated
+Terraform/.terraform/
+*.tfstate
+*.tfstate.backup
+
+# Chroma storage
+storage/chroma/
+
+# Node
+node_modules/
+
+# VS Code
+.vscode/
