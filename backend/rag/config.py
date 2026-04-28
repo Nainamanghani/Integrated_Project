@@ -11,7 +11,7 @@ class Settings(BaseSettings):
     tavily_api_key: str | None = None 
     # Vector DB
     vector_db_provider: str = "chroma"
-    chroma_persist_directory: Path = Path("./storage/chroma")
+    chroma_persist_directory: str = "./storage/chroma"
 
     # Embeddings
     embedding_model: str | None = None

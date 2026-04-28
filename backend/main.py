@@ -253,7 +253,8 @@ async def rag_query(
         return RAGQueryResponse(**payload)
 
     except Exception as e:
-        raise HTTPException(status_code=500, detail=str(e))
+      traceback.print_exc()   # 🔥 this will show exact line
+    raise HTTPException(status_code=500, detail=str(e))
 
 
 @app.post("/research", response_model=ResearchResponse)
