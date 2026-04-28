@@ -28,6 +28,7 @@ chromadb>=0.5.0
 
 # LLM & AI
 langchain>=0.3.0,<0.4.0
+sentence-transformers>=2.7.0
 langchain-community>=0.3.0,<0.4.0
 langchain-google-genai>=2.0.0,<3.0.0
 langchain-groq>=0.2.0,<0.3.0
