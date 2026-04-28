@@ -21,6 +21,7 @@ sqlalchemy==2.0.23
 
 # Data Processing
 python-slugify==8.0.1
+numpy==1.26.4
 
 # Vector Database
 chromadb>=0.5.0
