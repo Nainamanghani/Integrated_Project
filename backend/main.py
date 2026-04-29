@@ -1,4 +1,4 @@
-from fastapi import FastAPI, HTTPException, Depends, File, Form, UploadFile, Header
+﻿from fastapi import FastAPI, HTTPException, Depends, File, Form, UploadFile, Header
 from fastapi.middleware.cors import CORSMiddleware
 from fastapi.security import OAuth2PasswordRequestForm
 from sqlalchemy.orm import Session
@@ -253,7 +253,7 @@ async def rag_query(
         return RAGQueryResponse(**payload)
 
     except Exception as e:
-      traceback.print_exc()   # 🔥 this will show exact line
+      traceback.print_exc()   # ðŸ”¥ this will show exact line
     raise HTTPException(status_code=500, detail=str(e))
 
 
@@ -324,5 +324,5 @@ def health_check():
     return {
         "status": "ok",
         "version": "3.0.0"
-    }#   t e s t   c h a n g e  
- 
+    }# test change
+
